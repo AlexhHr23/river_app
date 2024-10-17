@@ -28,6 +28,11 @@ class _HomeView extends StatelessWidget {
           title: 'State Provider', 
           subTitile: 'Un estado simple', 
           location: '/state-provider'
+        ),
+        _CustomListTile(
+          title: 'State Provider', 
+          subTitile: 'Un estado future + Family', 
+          location: '/future-provider'
         )
       ],
     );
