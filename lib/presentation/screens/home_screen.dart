@@ -16,9 +16,7 @@ class HomeScreen extends StatelessWidget {
 }
 
 class _HomeView extends StatelessWidget {
-  const _HomeView({
-    super.key,
-  });
+  const _HomeView();
 
   @override
   Widget build(BuildContext context) {
@@ -33,6 +31,11 @@ class _HomeView extends StatelessWidget {
           title: 'State Provider', 
           subTitile: 'Un estado future + Family', 
           location: '/future-provider'
+        ),
+        _CustomListTile(
+          title: 'Stream Provider', 
+          subTitile: 'Un simple stream', 
+          location: '/stream-provider'
         )
       ],
     );

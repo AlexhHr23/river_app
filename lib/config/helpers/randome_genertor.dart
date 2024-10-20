@@ -7,4 +7,15 @@ class RandomeGenertor {
     final randomName = RandomNames(Zone.spain);
     return randomName.fullName();
   }
+
+  static Stream<String> randomNamesStream() {
+    return Stream.periodic(
+      const Duration(seconds: 2),
+      (i) {
+        print('Stream new value');
+        return getRandomName();
+      }
+    );
+  }
+
 }
